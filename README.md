@@ -12,5 +12,5 @@ The 'see all' gesture detector on the recent transaction of the screen linked to
 
 **Design by -[AppShark](https://dribbble.com/shots/20264415-Banking-App)**
 
-![Screen 1](/Screenshot_1672676326.png)
-![Screen 2](/Screenshot_1672676330.png)
+![Screen 1](Screenshot_1672676326.png)
+![Screen 2](Screenshot_1672676330.png)
