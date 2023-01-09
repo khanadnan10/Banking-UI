@@ -2,8 +2,6 @@ import 'package:bankingui/constant.dart';
 import 'package:bankingui/screens/All_Expenses.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/percent_indicator.dart';
-
 import '../widgets/Money_transfered.dart';
 import '../widgets/Month_overview.dart';
 import '../widgets/recent_transaction.dart';
@@ -37,13 +35,15 @@ class Home extends StatelessWidget {
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              CircleAvatar(
-                                radius: 25.0,
-                                backgroundColor: kGreyColor,
-                                backgroundImage: Image.asset(
-                                  'assets/profile.jpg',
-                                  fit: BoxFit.contain,
-                                ).image,
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(50.0),
+                                child: SizedBox(
+                                  height: 50.0,
+                                  width: 50.0,
+                                  child: Image.asset(
+                                    'assets/profile.jpg', fit: BoxFit.cover
+                                  ),
+                                ),
                               ),
                               const Icon(
                                 CupertinoIcons.bell,
@@ -135,7 +135,7 @@ class Home extends StatelessWidget {
                               PageRouteBuilder(
                                 pageBuilder:
                                     (context, animation, secondaryAnimation) {
-                                  return  AllExpenses();
+                                  return const AllExpenses();
                                 },
                                 transitionsBuilder: (context, animation,
                                     secondaryAnimation, child) {

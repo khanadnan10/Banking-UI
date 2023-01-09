@@ -13,11 +13,10 @@ class MoneyTransferredCard extends StatelessWidget {
         margin: const EdgeInsets.all(15.0),
         decoration: BoxDecoration(boxShadow: const [
           BoxShadow(
-            color: kYellowColor,
-             offset: Offset(0, 7),
-            blurRadius: 8,
-            spreadRadius: -3.0
-          )
+              color: kYellowColor,
+              offset: Offset(0, 7),
+              blurRadius: 8,
+              spreadRadius: -3.0)
         ], color: kYellowColor, borderRadius: BorderRadius.circular(40.0)),
         child: Padding(
           padding: const EdgeInsets.symmetric(
